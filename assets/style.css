@@ -1,0 +1,24 @@
+body, html{
+    background-image: url("https://i.pinimg.com/originals/1a/4e/b8/1a4eb84585f018822579611336d42ca7.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body{
+     margin: 50px;
+}
+
+div{
+    margin: 40px;
+    font-size: 20px;
+}
+.jumbotron{
+    background-color:lightgray;
+    text-align: center;
+}
+.jumbotron > p{
+ font-size: 30px;
+}
+.whitetext{
+    color:white;
+}

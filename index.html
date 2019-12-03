@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- link to bootstrap
+    link to css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/sketchy/bootstrap.min.css" rel="stylesheet" integrity="sha384-2kOE+STGAkgemIkUbGtoZ8dJLqfvJ/xzRnimSkQN7viOfwRvWseF7lqcuNXmjwrL" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+
+</head>
+
+
+<body>
+
+    <div class="jumbotron bg-dark">
+        <h1 class="whitetext display-2">Check your next train</h1>
+        <h3 class="whitetext display-5">"never miss the train again"</h3>
+        <h3 class="text-warning" >The time now is: </h3><h3 class="text-warning" id="timenow"></h3>
+
+    </div>
+
+    <!-- table to hold the schedule -->
+    <div class="card">
+        <div class="card-body">
+            <table class="table" id="trainschedule">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency(min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- form to put new schedule in -->
+    <div class="card text-white bg-info mb-3">
+            <h2> ADD TRAIN </h2>
+        <div class="card-body">
+            <form>
+                <fieldset>
+
+                    
+                    <div class="form-group">
+                            <label class="col-form-label" for="inputDefault">train name</label>
+                            <input type="text" class="form-control" id="trainName" placeholder="ex. Express 203I">
+                    </div>
+                    
+                    <div class="form-group">
+                            <label class="col-form-label" for="inputDefault">destination</label>
+                            <input type="text" class="form-control" id="destination" placeholder="ex. Bangkok">
+                    </div>
+                    
+                    <div class="form-group">
+                            <label class="col-form-label" for="inputDefault">first train time (HH:MM)</label>
+                            <input type="text" class="form-control" id="trainTime" placeholder="ex. 22:45">
+                    </div>
+                    
+                    <div class="form-group">
+                            <label class="col-form-label" for="inputDefault">requency (min)</label>
+                            <input type="text" class="form-control" id="frequency" placeholder="ex. 95">
+                    </div>
+
+                    <button type="submit" id='submit' class="btn btn-primary">Submit</button>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+<!-- fix db not a function -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Link to Moment.js should go here -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./assets/main.js"></script>
+</body>
+
+</html>
