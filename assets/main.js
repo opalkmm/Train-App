@@ -1,6 +1,5 @@
-require("dotenv").config();
 
-console.log(moment().format("DD/MM/YYYY hh:mm A"));
+//console.log(moment().format("DD/MM/YYYY hh:mm A"));
 // Your web app's Firebase configuration
 var firebaseConfig = {
   apiKey: process.env.apiKey,
