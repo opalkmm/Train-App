@@ -1,6 +1,6 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: process.env.apiKey,
+  apiKey: "apiKeyFirebase",
   authDomain: "train-time-a2fb5.firebaseapp.com",
   databaseURL: "https://train-time-a2fb5.firebaseio.com",
   projectId: "train-time-a2fb5",
